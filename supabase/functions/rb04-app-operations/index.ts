@@ -18,6 +18,7 @@ const MESSAGES: Record<string, [number, string]> = {
   INVALID_REQUEST: [400, "The request was not valid."],
   NOT_FOUND: [404, "The event is not available."],
   POLICY_REQUIRED: [409, "An owner must configure an applicable approval rule before this decision."],
+  APPROVAL_REQUIRED: [409, "This event requires an approval or rejection; acknowledgement cannot close it."],
   INTERNAL: [500, "The operation could not be completed."],
 };
 

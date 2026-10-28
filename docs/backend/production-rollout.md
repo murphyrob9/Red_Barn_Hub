@@ -22,8 +22,9 @@ No SALE events or employee-to-login mappings are manufactured.
 
 Review decisions append to the event history with the verified reviewer user ID.
 OWNER/MANAGER may review; ADMIN retains read access under the current schema.
-Approval/rejection requires a rule matching the event type, role, amount and event
-business date. An owner configures those rules through the app; no approval
+Approval, rejection and acknowledgement require a rule matching the event type,
+role, amount and event business date. Acknowledgement cannot close a case whose
+rule requires approval. An owner configures those rules through the app; no approval
 limits or policy references are supplied automatically. Decisions do not modify
 financial amounts. Unlinked employees continue to be denied employee data.
 
@@ -44,7 +45,8 @@ unresolved.
 The captured baseline has been recorded as applied in DEV migration history
 without executing its CREATE statements over existing objects. The follow-on
 pipeline migration has been applied to DEV as version `20261028060542`, matching
-the versioned SQL filename. A fresh destination must
+the versioned SQL filename. Terminal-decision policy enforcement is captured in
+the follow-on migration `20261028061308`. A fresh destination must
 first provide the Supabase auth objects and external roles stated in the baseline
 header; role credentials and local auth stubs are never included in migrations.
 
