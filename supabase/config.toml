@@ -15,3 +15,7 @@ entrypoint = "./functions/hyper-worker/index.ts"
 [functions.rb04-db-connectivity-test]
 verify_jwt = true
 entrypoint = "./functions/rb04-db-connectivity-test/index.ts"
+
+[functions.rb04-app-operations]
+verify_jwt = true
+entrypoint = "./functions/rb04-app-operations/index.ts"
