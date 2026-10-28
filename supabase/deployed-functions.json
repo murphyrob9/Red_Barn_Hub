@@ -1,0 +1,33 @@
+{
+  "project_ref": "dohkbwpikzszqzvhaunq",
+  "functions": [
+    {
+      "slug": "rb04-app-api",
+      "display_name": "rb04-app-api",
+      "version": 1,
+      "verify_jwt": true,
+      "bundle_sha256": "4850af752fd419cdd89fe997d7dd44b992290b22b00f25d3f1f1891100c24c54"
+    },
+    {
+      "slug": "rb04-app-readonly",
+      "display_name": "rb04-app-readonly",
+      "version": 3,
+      "verify_jwt": true,
+      "bundle_sha256": "a21a14f4944f823061311f8cc4838b846bccafac497c328637d60572af5a116e"
+    },
+    {
+      "slug": "hyper-worker",
+      "display_name": "rb04-clover-ingest-dev",
+      "version": 72,
+      "verify_jwt": true,
+      "bundle_sha256": "6c06822aeee757bdf12d24912f7abaac5addc82fdde40cda9a78926fc3df3dea"
+    },
+    {
+      "slug": "rb04-db-connectivity-test",
+      "display_name": "rb04-db-connectivity-test",
+      "version": 8,
+      "verify_jwt": true,
+      "bundle_sha256": "040a7d5c125506e15a6a8f8712c224d46eda1d0643a181f5b76b2a98e0d3d131"
+    }
+  ]
+}
