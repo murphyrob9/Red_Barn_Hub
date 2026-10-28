@@ -1,0 +1,17 @@
+project_id = "dohkbwpikzszqzvhaunq"
+
+[functions.rb04-app-api]
+verify_jwt = true
+entrypoint = "./functions/rb04-app-api/index.ts"
+
+[functions.rb04-app-readonly]
+verify_jwt = true
+entrypoint = "./functions/rb04-app-readonly/index.ts"
+
+[functions.hyper-worker]
+verify_jwt = true
+entrypoint = "./functions/hyper-worker/index.ts"
+
+[functions.rb04-db-connectivity-test]
+verify_jwt = true
+entrypoint = "./functions/rb04-db-connectivity-test/index.ts"
